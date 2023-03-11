@@ -27,21 +27,26 @@ const About = () => {
 
             <article className="about__card">
               <FiUsers className="about_icon" />
-              <h5>Experience</h5>
-              <small>200+ Worldwide</small>
+              <h5>Clients/Companies</h5>
+              <small>7</small>
             </article>
 
             <article className="about__card">
               <VscFolderLibrary className="about_icon" />
-              <h5>Experience</h5>
-              <small>80+ Completed</small>
+              <h5>Projects</h5>
+              <small>10+</small>
             </article>
           </div>
 
           <p>
-            sdf dsfsfdfs dfs sd dfs dfs dfs dsf sd dfs dfs df dfs fd ds sd sd
-            sddsf dsf dfs ds sdf sdf sf s s s df f dfsdfs sds ds dfs dfs dfs sd
-            dsf dfs
+            Backend Software Developer with frontend experience and Support
+            Engineer with more than 7 years of software engineering experience
+            in the development of commercial apps. Good knowledge of C#, .NET,
+            ASP.NET MVC. Solid knowledge of frontend technologies such as
+            JavaScript/React, TypeScript HTML, CSS. Has experience in designing
+            databases and queries using MSSQL, MySQL. Able to develop,
+            troubleshoot, debug, and maintain complex applications. Hands-on
+            experience in Agile software lifecycle. Unit testing.
           </p>
 
           <a href="#contact" className="btn btn-primary">
