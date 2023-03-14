@@ -1,6 +1,39 @@
 import "./services.css";
 import { BiCheck } from "react-icons/bi";
 
+const data = [
+  {
+    type: "frontend",
+    title: "Fronend",
+    list: [
+      "Web applications using React",
+      "Better and safer code with TypeScript",
+      "Responsive Design",
+    ],
+  },
+  {
+    type: "backend",
+    title: "Backend Development",
+    list: [
+      "Web applications",
+      "Desktop applications",
+      "Database design",
+      "Implementing DLL files written in C++",
+      "Translating Visual Basic apps to C#",
+    ],
+  },
+  {
+    type: "other",
+    title: "Other",
+    list: [
+      "Azure DevOps/Cloud",
+      "CI/CD",
+      "Product Owner",
+      "Reliability, focus, efficiency",
+    ],
+  },
+];
+
 const Services = () => {
   return (
     <section id="services">
@@ -8,95 +41,26 @@ const Services = () => {
       <h2>Services</h2>
 
       <div className="container services__container">
-        <article className="service">
-          <div className="service__head">
-            <h3>UI/UX Desigh</h3>
-          </div>
+        {data.map((d) => {
+          return (
+            <article key={d.type} className="service">
+              <div className="service__head">
+                <h3>{d.title}</h3>
+              </div>
 
-          <ul className="service__list">
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>sad s sdfls;as asasd sd ds ds ds ds dsf asdfsdf </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>sad s sdfls;as asasdf asdfsdf </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>sad s sdfls;as asasdf asdfsdf </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>sad s sdfls;as asasdf asdfsdf </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>sad s sdfls;as asasdf asdfsdf </p>
-            </li>
-          </ul>
-        </article>
-        {/* END of UI/UX */}
-
-        <article className="service">
-          <div className="service__head">
-            <h3>Web Development</h3>
-          </div>
-
-          <ul className="service__list">
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>sad s sdfls;as asasdf asdfsdf </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>sad s sdfls;as asasdf asdfsdf </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>sad s sdfls;as asasdf asdfsdf </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>sad s sdfls;as asasdf asdfsdf </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>sad s sdfls;as asasdf asdfsdf </p>
-            </li>
-          </ul>
-        </article>
-        {/* WEB DEVELOPMENT */}
-
-        <article className="service">
-          <div className="service__head">
-            <h3>Content Creation</h3>
-          </div>
-
-          <ul className="service__list">
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>sad s sdfls;as asasdf asdfsdf </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>sad s sdfls;as asasdf asdfsdf </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>sad s sdfls;as asasdf asdfsdf </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>sad s sdfls;as asasdf asdfsdf </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>sad s sdfls;as asasdf asdfsdf </p>
-            </li>
-          </ul>
-        </article>
-        {/* CONTENT CREATION */}
+              <ul className="service__list">
+                {d.list.map((option, index) => {
+                  return (
+                    <li key={index}>
+                      <BiCheck className="service__list-icon" />
+                      <p>{option}</p>
+                    </li>
+                  );
+                })}
+              </ul>
+            </article>
+          );
+        })}
       </div>
     </section>
   );
