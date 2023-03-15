@@ -4,7 +4,7 @@ import { BiCheck } from "react-icons/bi";
 const data = [
   {
     type: "frontend",
-    title: "Fronend",
+    title: "Frontend",
     list: [
       "Web applications using React",
       "Better and safer code with TypeScript",
@@ -13,7 +13,7 @@ const data = [
   },
   {
     type: "backend",
-    title: "Backend Development",
+    title: "Backend",
     list: [
       "Web applications",
       "Desktop applications",
@@ -37,7 +37,7 @@ const data = [
 const Services = () => {
   return (
     <section id="services">
-      <h5>Waht I Offer</h5>
+      <h5>What I Offer</h5>
       <h2>Services</h2>
 
       <div className="container services__container">

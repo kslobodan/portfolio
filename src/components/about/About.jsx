@@ -11,11 +11,11 @@ const About = () => {
       <h2>About Me</h2>
 
       <div className="container about__container">
-        <div className="about__me">
+        {/* <div className="about__me">
           <div className="about__me-image">
             <img src={ME} alt="About Image" />
           </div>
-        </div>
+        </div> */}
 
         <div className="about__content">
           <div className="about__cards">
@@ -48,10 +48,6 @@ const About = () => {
             troubleshoot, debug, and maintain complex applications. Hands-on
             experience in Agile software lifecycle. Unit testing.
           </p>
-
-          <a href="#contact" className="btn btn-primary">
-            Let's Talk
-          </a>
         </div>
       </div>
     </section>

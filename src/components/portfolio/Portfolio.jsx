@@ -30,8 +30,8 @@ const data = [
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <h5>My Recent Work</h5>
-      <h2>Frontend Portfolio</h2>
+      <h5>Recent Work</h5>
+      <h2>My Frontend Portfolio</h2>
 
       <div className="container portfolio__container">
         {data.map(({ id, image, title, github, demo }) => {

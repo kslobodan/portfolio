@@ -3,6 +3,8 @@ import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { MdOutlineRecommend } from "react-icons/md";
 import { BiMessageSquareDetail } from "react-icons/bi";
 import { useState } from "react";
 
@@ -38,6 +40,20 @@ const Nav = () => {
         className={activeNav === "#services" ? "active" : ""}
       >
         <RiServiceLine />
+      </a>
+      <a
+        href="#portfolio"
+        onClick={() => setActiveNav("#portfolio")}
+        className={activeNav === "#portfolio" ? "active" : ""}
+      >
+        <AiOutlineFundProjectionScreen />
+      </a>
+      <a
+        href="#testimonials"
+        onClick={() => setActiveNav("#testimonials")}
+        className={activeNav === "#testimonials" ? "active" : ""}
+      >
+        <MdOutlineRecommend />
       </a>
       <a
         href="#contact"
